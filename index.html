@@ -1,89 +1,74 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-</head>
-<style>
-   #bigcontainer{
-height: 400px;
-width: 50%;
-margin: auto;
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>U2C3</title>
+    <link rel="stylesheet" href="index.css" />
+  </head>
+  <body>
+    <!-- Dont make any changes here -->
+    <h1>Masai Evaluation Report</h1>
 
-   }
-
-
-
-
-    #container{
-        display: grid;
-        grid-template-columns:100px 100px 100px ;
-        grid-template-rows: 100px 100px 100px;
-        gap : 20px;
-
-    }
-    #container>div{
-        background-color: teal;
-        border-radius: 10px;
-    }
-    #A{
-        grid-area: 1/1/2/2;
-
-    }
-    #B{
-        grid-area: 1/2/2/5 ;
-
-    }
-    #C{
-        grid-area: 1/5/2/6;
-
-
-    }
-    #D{
-        grid-area: 2/1/3/4;
-
-    }
-    #E{
-        grid-area: 2/4/3/5;
-
-    }
-    #F{
-        grid-area: 2/5/3/6;
-
-    }
-    #G{
-        grid-area: 3/1/4/2;
-
-    }
-    #H{
-        grid-area: 3/2/4/3;
-
-    }
-    #I{
-        grid-area: 3/3/4/6;
-
-        }
-
-</style>
+    <div>
+      <!-- ***** We are using form here  ****  -->
+      <form>
+        <label for="">Student Image</label><br />
+        <input id="image" type="text" placeholder="Enter Image URL" /><br />
+        <label for="">Student Name</label><br />
+        <input id="name" type="text" placeholder="Enter Student Name" /><br />
+        <label for="">Batch </label><br />
+        <select id="batch">
+          <option value="FT WEB-17">FT WEB-17</option>
+          <option value="FT WEB-16">FT WEB-16</option>
+          <option value="FT WEB-15">FT WEB-15</option>
+          <option value="FT WEB-14">FT WEB-14</option></select
+        ><br />
+        <label for="">DSA </label><br />
+        <input
+          id="dsa"
+          type="number"
+          placeholder="Enter DSA score out of 10"
+        /><br />
+        <label for="">Skillathon </label><br />
+        <input
+          id="cs"
+          type="number"
+          placeholder="Enter Skillathon score out of 10"
+        /><br />
+        <label for="">Coding </label><br />
+        <input
+          id="coding"
+          type="number"
+          placeholder="Enter Coding score out of 10"
+        /><br />
+        <input type="submit" />
+      </form>
+      <table>
+        <!-- Dont change order of columns -->
+        <thead>
+          <tr>
+            <th>Image</th>
+            <th>Name</th>
+            <th>Batch</th>
+            <th>DSA</th>
+            <th>Skillathon</th>
+            <th>Coding</th>
+            <th>Percentage %</th>
+            <th>Status</th>
+          </tr>
+        </thead>
+        <tbody>
+        <!-- Append your output to tbody -->
+            <tr>
+            </tr>
 
 
-
-
-<body>
-    <div id = "bigcontainer">
-    <div id = "container">
-        <div id = "A"> </div>
-        <div id = "B"></div>
-        <div id = "C"></div>
-        <div id = "D"> </div>
-        <div id = "E">  </div>
-        <div id = "F">  </div>
-        <div id = "G">  </div>
-        <div id = "H">  </div>
-        <div id = "I">  </div>
+        </tbody>
+      </table>
     </div>
-    </div>
-</body>
+  </body>
 </html>
+
+<script src="report.js"></script>
